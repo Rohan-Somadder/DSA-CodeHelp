@@ -40,6 +40,5 @@ int main()
     }
     int pind = pivotIndex(nums);
     cout << "The pivot index is : " << pind << endl;
-
     return 0;
 }
