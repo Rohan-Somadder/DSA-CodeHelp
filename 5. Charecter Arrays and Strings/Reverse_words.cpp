@@ -20,12 +20,14 @@ string reverseWords(string s)
         {
             word.push_back(s[i]);
         }
-        if (s[i] == ' ' && s[i + 1] != ' ')
+        if ((s[i] == ' ' && s[i + 1] != ' ') || i == s.length() - 1)
         {
+            reverse(word.begin(), word.end());
             ans = ans + word + " ";
             word.clear();
         }
     }
+    return ans;
 }
 
 int main()
