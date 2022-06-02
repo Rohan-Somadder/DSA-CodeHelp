@@ -1,5 +1,4 @@
-#include <iostream>
-#include <math.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 // TODO : For -ve number dec to binary.
@@ -44,15 +43,33 @@ void dec_to_bin(int dec)
 
 void dec_to_bin_negative(int dec)
 {
-    int i = 0;
-    long int bin = 0;
+    vector<int> bin;
     dec *= -1;
+    int i = 0, total_digits = ceil(log2(dec) + 1);
     while (dec != 0)
     {
-        bin += floor(pow(10, i++) * (dec % 2));
+        bin.push_back(dec % 2);
         dec /= 2;
     }
-    
+    cout << "T D:" << total_digits << endl;
+    for (i = bin.size(); i < total_digits; i++)
+        bin.push_back(0);
+    reverse(bin.begin(), bin.end());
+
+    // 1's comliment + 1
+
+    for (i = 0; i < bin.size(); i++)
+    {
+        bin[i] = bin[i] ^ 1;
+    }
+    bin[bin.size() - 1] += 1;
+
+    // Display
+
+    cout << "The binary is : ";
+    for (i = 0; i < bin.size(); i++)
+        cout << bin[i];
+    cout << endl;
 }
 
 int main()
@@ -70,13 +87,17 @@ int main()
     }
     else if (ch == 2)
     {
-        //Decimal to Binary
+        // Decimal to Binary
         int dec;
         cout << "Enter the decimal number: ";
         cin >> dec;
         if (dec > 0)
         {
             dec_to_bin(dec);
+        }
+        else if (dec == 0)
+        {
+            cout << 0;
         }
         else
         {
