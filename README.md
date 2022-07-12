@@ -13,7 +13,10 @@
 
 1. Basic
 2. 1-D Arrays
+3. Searching
+4. Sorting
+5. Charecter Arrays and Strings
 
 * Topics Ongoing -
 
-1. Binary Search
+1. 2-D Arrays
