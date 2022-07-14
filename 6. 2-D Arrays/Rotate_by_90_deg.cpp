@@ -14,10 +14,67 @@ to modify the input 2D matrix directly. DO NOT allocate another
 #include <bits/stdc++.h>
 using namespace std;
 
+void rotate(vector<vector<int>> &matrix)
+{
+    int row = matrix.size();
+    int col = matrix[0].size();
+    // transposing
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            if (i > j)
+            {
+                swap(matrix[i][j], matrix[j][i]);
+            }
+        }
+    }
+    // reversing the rows
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            if (j < col / 2)
+            {
+                swap(matrix[i][j], matrix[i][col - j - 1]);
+            }
+        }
+    }
+}
 
+void printArray(vector<vector<int>> arr, int n)
+{
+    cout << "The Array is : " << endl;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << arr[i][j] << "  ";
+        }
+        cout << endl;
+    }
+}
 
 int main()
 {
-    
+    vector<vector<int>> arr;
+    vector<int> temp;
+    int n, val;
+    cout << "Enter the number of rows : ";
+    cin >> n;
+    cout << "Enter the array : ";
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> val;
+            temp.push_back(val);
+        }
+        arr.push_back(temp);
+        temp.clear();
+    }
+    printArray(arr, n);
+    rotate(arr);
+    printArray(arr, n);
     return 0;
 }
