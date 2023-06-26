@@ -1,19 +1,21 @@
 /*
 You are given an integer array 'ARR' of size 'N' and an integer 'S'.
-Your task is to return the list of all pairs of elements such that 
+Your task is to return the list of all pairs of elements such that
 each sum of elements of each pair equals 'S'.
 
 NOTE -->
 Each pair should be sorted i.e the first value should be less than
-or equals to the second value. 
+or equals to the second value.
 Return the list of pairs sorted in non-decreasing order of their first value.
-In case if two pairs have the same first value, the pair with a smaller 
+In case if two pairs have the same first value, the pair with a smaller
 second value should come first.
 */
 
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Unoptimised O(n^2)
 vector<vector<int>> pairSum(vector<int> &arr, int s)
 {
     vector<vector<int>> ans;
@@ -26,6 +28,41 @@ vector<vector<int>> pairSum(vector<int> &arr, int s)
                 vector<int> temp;
                 temp.push_back(min(arr[i], arr[j]));
                 temp.push_back(max(arr[i], arr[j]));
+                ans.push_back(temp);
+            }
+        }
+    }
+    sort(ans.begin(), ans.end());
+    return ans;
+}
+*/
+
+// Optimised O(n)
+vector<vector<int>> pairSum(vector<int> &arr, int s)
+{
+    map<int, int> m;
+    vector<vector<int>> ans;
+    for (int i = 0; i < arr.size(); i++)
+    {
+        m[arr[i]] = s - arr[i];
+    }
+    for (int i = 0; i < arr.size(); i++)
+    {
+        if (m.count(s - arr[i]) >= 1)
+        {
+            vector<int> temp;
+            if (arr[i] < (s - arr[i]))
+            {
+                temp.push_back(arr[i]);
+                temp.push_back(s - arr[i]);
+            }
+            else
+            {
+                temp.push_back(s - arr[i]);
+                temp.push_back(arr[i]);
+            }
+            if (find(ans.begin(), ans.end(), temp) == ans.end())
+            {
                 ans.push_back(temp);
             }
         }

@@ -43,7 +43,7 @@ vector<vector<int>> findTriplets(vector<int> arr, int n, int K)
             }
         }
     }
-    // similar as for val in s (Python)
+    // similar as : for val in s (Python)
     // inserting the set elements in the answer
     for (auto val : s)
     {
