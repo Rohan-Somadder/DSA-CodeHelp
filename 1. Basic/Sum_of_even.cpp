@@ -1,3 +1,7 @@
+/*
+Program to print the sum of all even numbers in the given input range.
+*/
+
 #include <iostream>
 using namespace std;
 

@@ -1,4 +1,5 @@
 // Give the total number of set bits (1s) present in both a and b together.
+
 #include <iostream>
 using namespace std;
 
