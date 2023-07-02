@@ -1,3 +1,7 @@
+/*
+Program to find the root of a number without using any function or operator.
+*/
+
 #include <iostream>
 using namespace std;
 

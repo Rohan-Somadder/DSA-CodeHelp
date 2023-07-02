@@ -1,5 +1,5 @@
 /*
-Format the given array by seperating the evens and odds and placing them in the
+Format the given array by separating the evens and odds and placing them in the
 new array as their respective original order.
 */
 

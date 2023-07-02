@@ -1,3 +1,7 @@
+/*
+Program to convert binary to decimal and vice-versa.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -26,7 +30,7 @@ void dec_to_bin(int dec)
     cout << "The binary is : " << bin << endl;
     // Decimal to Binary
     /*
-        meathod 2-
+        method 2-
         cout << "Enter the decimal number: ";
         cin >> dec;
         bin = 0;
@@ -56,7 +60,7 @@ void dec_to_bin_negative(int dec)
         bin.push_back(0);
     reverse(bin.begin(), bin.end());
 
-    // 1's comliment + 1
+    // 1's compliment + 1
 
     for (i = 0; i < bin.size(); i++)
     {

@@ -1,2 +1,3 @@
 # For C++ files -
 *.exe
+.vscode

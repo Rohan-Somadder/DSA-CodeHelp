@@ -1,3 +1,7 @@
+/*
+Program to print if the input is prime or not.
+*/
+
 #include <iostream>
 using namespace std;
 

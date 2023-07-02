@@ -1,3 +1,7 @@
+/*
+A Program which correctly deduces whether the input character is uppercase, lowercase or a number.
+*/
+
 #include <iostream>
 
 using namespace std;
@@ -5,7 +9,7 @@ using namespace std;
 int main()
 {
     char ch;
-    cout << "Enter a charecter: ";
+    cout << "Enter a character: ";
     cin >> ch;
     if ((ch >= 'a') && (ch <= 'z'))
     {

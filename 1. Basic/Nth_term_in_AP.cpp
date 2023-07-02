@@ -13,6 +13,6 @@ int main()
     cin >> d;
     cout << "Enter the number for nth term: ";
     cin >> n;
-    cout << "Nth term of this Arithematic Progression: " << (a + (n - 1) * d) << endl;
+    cout << "Nth term of this Arithmetic Progression: " << (a + (n - 1) * d) << endl;
     return 0;
 }

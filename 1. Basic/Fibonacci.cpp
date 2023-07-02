@@ -1,9 +1,13 @@
+/*
+A program to print the nth term of the fibonacci series.
+*/
+
 #include <iostream>
 using namespace std;
 
 // Do a function to print nth tern in the series.
 
-int nthTermFibbonacci(int n)
+int nthTermFibonacci(int n)
 {
     // return the n th term
     if (n == 1)
@@ -45,6 +49,6 @@ int main()
     cout << "Enter the number of terms: ";
     cin >> n;
     fibonacci(n);
-    cout << "Nth term in the series: " << nthTermFibbonacci(n) << endl;
+    cout << "Nth term in the series: " << nthTermFibonacci(n) << endl;
     return 0;
 }
