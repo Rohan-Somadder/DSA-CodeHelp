@@ -1,4 +1,8 @@
-#include <iostream>
+/*
+Given an array reverse it.
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
 void revArray(int arr[], int size)

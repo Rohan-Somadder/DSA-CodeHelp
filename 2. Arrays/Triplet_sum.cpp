@@ -16,7 +16,7 @@ vector<vector<int>> findTriplets(vector<int> arr, int n, int K)
     for (int i = 0; i < n; i++)
     {
         // first sorted array is taken and then end points are fixed the loop will run till the
-        // end points collide and then next iteration will be exceuted thus no extra loop
+        // end points collide and then next iteration will be executed thus no extra loop
         // similar to as a binary search
         int sum = K - arr[i];
         int j = i + 1;

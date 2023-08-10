@@ -12,7 +12,7 @@ int findDuplicate(vector<int> &nums)
 {
     vector<int> arr = nums;
     int k;
-    for (int i = 0; i < nums.size(); i++)
+    for (int i = 0; i < arr.size(); i++)
     {
         k = abs(arr[i]) - 1;
         if (arr[k] > 0)

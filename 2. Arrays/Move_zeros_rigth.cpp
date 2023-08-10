@@ -34,6 +34,7 @@ int main()
         nums.push_back(x);
     }
     moveZeroes(nums);
+    cout<<"Array after shifting zeroes to right : ";
     for (int i = 0; i < n; i++)
         cout << nums[i] << "  ";
     return 0;

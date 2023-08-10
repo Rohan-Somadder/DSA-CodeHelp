@@ -65,7 +65,7 @@ int main()
         nums2.push_back(x);
     }
     merge(nums1, n1, nums2, n2);
-    cout << "Array after merge: "; 
+    cout << "Array after merging : "; 
     for (int i = 0; i < n1 + n2; i++)
     {
         cout << nums1[i] << "  ";

@@ -16,7 +16,7 @@ bool uniqueOccurrences(vector<int> &arr)
     {
         if (arr[i] != digit)
         {
-            // Counting the number of occurences
+            // Counting the number of occurrences
             int num = count(arr.begin(), arr.end(), arr[i]);
             occurrence.push_back(num);
             digit = arr[i];
@@ -26,7 +26,7 @@ bool uniqueOccurrences(vector<int> &arr)
     for (int i = 0; i < occurrence.size(); i++)
     {
         int n = count(occurrence.begin(), occurrence.end(), occurrence[i]);
-        //checking for multiple same number of occurences
+        //checking for multiple same number of occurrences
         if (n > 1)
         {
             return false;
@@ -50,11 +50,11 @@ int main()
     }
     if (uniqueOccurrences(arr))
     {
-        cout << "All the elements have occured unique times.";
+        cout << "All the elements have occurred unique times.";
     }
     else
     {
-        cout << "Some elements have occured same times.";
+        cout << "Some elements have occurred same times.";
     }
     return 0;
 }
