@@ -5,8 +5,7 @@ the array twice. Your task is to find the duplicate integer value present
 in the array.
 */
 
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 int findDuplicate(vector<int> &arr)

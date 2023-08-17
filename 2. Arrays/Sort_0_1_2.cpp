@@ -10,7 +10,6 @@ using namespace std;
 
 void sortArray(vector<int> &arr, int n)
 {
-    // Write your code here
     int left = 0, right = n - 1, mid = 0;
     while (mid <= right)
     {
@@ -46,7 +45,7 @@ int main()
         arr.push_back(x);
     }
     sortArray(arr, n);
-    cout << "seperated form : " << endl;
+    cout << "separated form : " << endl;
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";

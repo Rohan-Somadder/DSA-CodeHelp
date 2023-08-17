@@ -1,8 +1,9 @@
 /*
-Array consists od 0s and 1s , seperate them and keep the 0s at the left 
+Array consists od 0s and 1s , separate them and keep the 0s at the left 
 and the 1s at the right.
 */
-#include <iostream>
+
+#include <bits/stdc++.h>
 using namespace std;
 
 void sortArray(int arr[], int size)
@@ -42,7 +43,7 @@ int main()
 	{
 		cin >> arr[i];
 	}
-
+	cout<<"Array after sorting 0s and 1s : ";
 	sortArray(arr, n);
 	print(arr, n);
 	return 0;

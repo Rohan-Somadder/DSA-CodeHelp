@@ -15,7 +15,7 @@ second value should come first.
 using namespace std;
 
 /*
-Unoptimised O(n^2)
+Unoptimized O(n^2)
 vector<vector<int>> pairSum(vector<int> &arr, int s)
 {
     vector<vector<int>> ans;
@@ -37,7 +37,7 @@ vector<vector<int>> pairSum(vector<int> &arr, int s)
 }
 */
 
-// Optimised O(n)
+// Optimized O(n)
 vector<vector<int>> pairSum(vector<int> &arr, int s)
 {
     map<int, int> m;

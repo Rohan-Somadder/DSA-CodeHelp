@@ -1,4 +1,8 @@
-#include <iostream>
+/*
+Given an array calculate the sum of the elements.
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
 int sumArray(int arr[], int size)

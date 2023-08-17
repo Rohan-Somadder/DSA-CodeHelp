@@ -1,7 +1,11 @@
-#include <iostream>
+/*
+Given an array find the unique element present in the array.
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
-// Optimised solution O(n)
+// Optimized solution O(n)
 void findUnique(int a[], int size)
 {
     int c = 0;
@@ -11,6 +15,7 @@ void findUnique(int a[], int size)
     }
     cout << "Unique element is " << c;
 }
+
 int main()
 {
     int arr[100], n;

@@ -1,4 +1,8 @@
-#include <iostream>
+/*
+Given an array swap the alternate elements of the array.
+*/
+
+#include <bits/stdc++.h>
 using namespace std;
 
 void swapAlternate(int arr[], int size)
@@ -32,7 +36,7 @@ int main()
         cin >> arr[i];
     }
     swapAlternate(arr, n);
-    cout << "Array after reversal: ";
+    cout << "Array after swapping: ";
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";
