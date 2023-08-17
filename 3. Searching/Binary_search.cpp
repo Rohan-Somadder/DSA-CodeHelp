@@ -1,5 +1,5 @@
 /*
-Sample program for the excecution of binary seaching alogrithm.
+Sample program for the execution of binary searching algorithm.
 */
 
 #include <bits/stdc++.h>
@@ -29,7 +29,7 @@ int main()
 {
     vector<int> nums;
     int n, x;
-    cout << "Enter the nuber of terms: ";
+    cout << "Enter the number of terms: ";
     cin >> n;
     cout << "Enter the array: ";
     for (int i = 0; i < n; i++)
@@ -37,7 +37,7 @@ int main()
         cin >> x;
         nums.push_back(x);
     }
-    cout << "Enter the elenment to search: ";
+    cout << "Enter the element to search: ";
     cin >> x;
     int index = binarySearch(nums, x);
     cout << "The index of the element in the array: " << index << endl;

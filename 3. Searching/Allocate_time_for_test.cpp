@@ -1,5 +1,5 @@
 /*
-Ayush is studying for ninjatest which will be held after 'N' days,
+Ayush is studying for ninja test which will be held after 'N' days,
 And to score good marks he has to study 'M' chapters and the ith chapter
 requires TIME[i] seconds to study. The day in Ayush’s world has 100^100 seconds.
 There are some rules that are followed by Ayush while studying.

@@ -1,5 +1,5 @@
 /*
-Find the first(left most) and last(rigth most) occurence of an
+Find the first(left most) and last(right most) occurrence of an
 integer and return -1 if that doesn't exist.
 */
 
@@ -74,8 +74,8 @@ int main()
     }
     cout << "Enter the element: ";
     cin >> x;
-    cout << "First occurence : " << firstOcc(nums, x) << endl;
-    cout << "Last occurence : " << lastOcc(nums, x) << endl;
-    cout << "Total occurences : " << numOfOcc(nums, x) << endl;
+    cout << "First occurrence : " << firstOcc(nums, x) << endl;
+    cout << "Last occurrence : " << lastOcc(nums, x) << endl;
+    cout << "Total occurrence : " << numOfOcc(nums, x) << endl;
     return 0;
 }

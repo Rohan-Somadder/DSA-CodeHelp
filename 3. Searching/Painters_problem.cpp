@@ -5,10 +5,6 @@ Some ‘K’ numbers of painters are available to paint these boards. Consider t
 each unit of a board takes 1 unit of time to paint.
 You are supposed to return the area of the minimum time to get this job done of
 painting all the ‘N’ boards under a constraint that any painter will only paint the continuous sections of boards.
-
-
-TODO: In CodeStudio complete solution
-LINK - "https://www.codingninjas.com/codestudio/problems/painter's-partition-problem_1089557"
 */
 
 #include <bits/stdc++.h>

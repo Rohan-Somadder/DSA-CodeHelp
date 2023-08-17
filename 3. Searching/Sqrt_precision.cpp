@@ -2,7 +2,8 @@
 Given a number return the square root of that number with the given precision.
 eg - sqrt(5) = 2.236 for precision = 3
 */
-// * The max precision is 5
+//* The max precision is 5
+
 #include <bits/stdc++.h>
 using namespace std;
 
