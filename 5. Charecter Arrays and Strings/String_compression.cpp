@@ -32,7 +32,7 @@ int compress(vector<char> &chars)
         {
             j++;
         }
-        // after a new charecter is found
+        // after a new character is found
         chars[ansIndex++] = chars[i];
         int count = j - i;
         if (count > 1)

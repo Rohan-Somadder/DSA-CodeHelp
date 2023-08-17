@@ -13,7 +13,7 @@ Output: t
 #include <bits/stdc++.h>
 using namespace std;
 
-char getMaxOccuringChar(string str)
+char getMaxOccurringChar(string str)
 {
     int alpha[26] = {0};
     for (int i = 0; i < str.length(); i++)
@@ -45,7 +45,7 @@ int main()
     string str;
     cout << "Enter a string : ";
     cin >> str;
-    char ch = getMaxOccuringChar(str);
-    cout << "The most occuring charecter is : " << ch << endl;
+    char ch = getMaxOccurringChar(str);
+    cout << "The most occurring character is : " << ch << endl;
     return 0;
 }

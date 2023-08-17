@@ -66,7 +66,7 @@ int main()
     string s1, s2;
     cout << "Enter a string : ";
     cin >> s2;
-    cout << "Enter string to check for permutaions : ";
+    cout << "Enter string to check for permutations : ";
     cin >> s1;
     if (checkInclusion(s1, s2))
     {

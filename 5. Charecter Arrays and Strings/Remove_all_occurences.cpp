@@ -26,6 +26,6 @@ int main()
     getline(cin, s);
     cout << "Enter string to be removed : ";
     getline(cin, p);
-    cout << "String after removing all occurences : " << removeOccurrences(s, p) << endl;
+    cout << "String after removing all occurrences : " << removeOccurrences(s, p) << endl;
     return 0;
 }

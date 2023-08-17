@@ -1,3 +1,7 @@
+/*
+Print the length of the given array.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -3,6 +3,7 @@ You are given a string 'S'. Your task is to check whether the string
 is palindrome or not. For checking palindrome, consider alphabets and
 numbers only and ignore the symbols and whitespaces.
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -46,8 +47,8 @@ int main()
     cout << "Enter a string: ";
     getline(cin, s);
     if (checkPalindrome(s))
-        cout << "Yes";
+        cout << "Palindrome";
     else
-        cout << "No";
+        cout << "Not Palindrome";
     return 0;
 }

@@ -1,3 +1,7 @@
+/*
+Reverse the given array.
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
