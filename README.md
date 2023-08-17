@@ -15,7 +15,8 @@
 2. 1-D Arrays
 3. Searching
 4. Sorting
-5. Charecter Arrays and Strings
+5. Character Arrays and Strings
+6. 2-D Arrays
 
 * Topics Ongoing -
 
